@@ -6,7 +6,6 @@ class CalculadorPontuacao
 {
     public function recuperarPontuacao(Pontuavel $conteudo)
     {
-
         return $conteudo->recuperarPontuacao();
     }
 }
