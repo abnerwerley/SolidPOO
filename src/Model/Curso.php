@@ -1,6 +1,8 @@
 <?php
 
-namespace Alura\Solid\Model;
+namespace SolidPoo\src\Model;
+
+use SolidPoo\src\Model\Pontuavel;
 
 class Curso implements Pontuavel
 {
@@ -39,5 +41,12 @@ class Curso implements Pontuavel
     public function recuperaPontuacao(): int
     {
         return 100;
+    }
+
+    public function assistir(): void
+    {
+        foreach ($this->recuperarVideos as $video) {
+            $video->assistir();
+        }
     }
 }

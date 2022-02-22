@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\Solid\Model;
+namespace SolidPoo\src\Model;
 
 class Video
 {

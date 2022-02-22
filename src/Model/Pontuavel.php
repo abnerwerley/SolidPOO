@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\Solid\Pontuavel;
+namespace SolidPoo\src\Model;
 
 interface Pontuavel
 {

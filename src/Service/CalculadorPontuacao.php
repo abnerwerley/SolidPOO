@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\Solid\Service;
+namespace SolidPoo\src\Service;
 
 class CalculadorPontuacao
 {

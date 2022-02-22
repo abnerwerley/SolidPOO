@@ -1,17 +1,15 @@
 <?php
 
-namespace Alura\Solid\Service;
+namespace SolidPoo\src\Serice;
 
-use Alura\Solid\Model\AluraMais;
-use Alura\Solid\Model\Curso;
+use SolidPoo\src\Model\AluraMais;
+use SolidPoo\src\Model\Curso;
 
 class Assistidor
 {
     public function assisteCurso(Curso $curso)
     {
-        foreach ($curso->recuperarVideos() as $video) {
-            $video->assistir();
-        }
+        $curso->assistir();
     }
 
     public function assisteAluraMais(AluraMais $aluraMais)

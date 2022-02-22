@@ -1,6 +1,9 @@
 <?php
 
-namespace Alura\Solid\Model;
+namespace SolidPoo\src\Model;
+
+use SolidPoo\src\Model\Video;
+use SolidPoo\src\Model\Pontuavel;
 
 class AluraMais extends Video implements Pontuavel
 {
@@ -14,7 +17,7 @@ class AluraMais extends Video implements Pontuavel
 
     public function recuperarUrl(): string
     {
-        return str_replace(' ', '-', strtolower($this->categoria));
+        return 'http://videos.alura.com.br/' . str_replace(' ', '-', strtolower($this->categoria));
     }
 
     public function recuperarPontuacao(): int
